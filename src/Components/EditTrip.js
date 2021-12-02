@@ -60,7 +60,7 @@ function EditTrip({trip}) {
 
     function handleDeleteTrip(event) {
         event.preventDefault();
-        fetch(`http://localhost:3000/trips/${trip.id}}`, {
+        fetch(`${apiURL}trips/${trip.id}}`, {
             method: 'DELETE',
             headers: {
               'Content-Type': 'application/json',
