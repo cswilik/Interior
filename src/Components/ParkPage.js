@@ -33,6 +33,7 @@ function ParkPage() {
 
     useEffect(() => {
         const token = localStorage.getItem("token")
+        console.log(token)
         fetch(`${apiURL}dashboard`, {
             method: 'GET',
             headers: {
