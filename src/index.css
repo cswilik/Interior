@@ -1,0 +1,556 @@
+body {
+  background-color:  rgb(236,230,214) !important;
+  margin: 0;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* code { */
+  /* font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace; */
+/* } */
+
+.nav-bar {
+  background-color: rgb(236,230,214) !important;
+  font-family: 'Oxygen', sans-serif !important;
+}
+
+.ui.menu {
+  background: rgb(236,230,214) !important;
+  border: none !important;
+}
+::placeholder {
+  color: rgb(188,166,110);
+  font-size: 1em;
+}
+
+
+
+.home-page-header {
+  background-image: url('../src/homepage.jpeg');
+  height: 40vw;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 1em;
+}
+
+.header-div {
+  width: 100%;
+  text-align: left;
+  padding-top: 28%
+}
+
+.main-icon {
+  border: none !important;
+}
+
+.main-title {
+  color: lightgray;
+  font-size: 60px;
+  font-family: 'Cantarell', serif;
+  margin-left: 8%;
+}
+
+.park-title {
+  color: white !important;
+  font-family: 'Cantarell', serif;
+  margin-top: 4em !important;
+  font-size: 60px!important;
+  line-height: 60px !important;
+}
+
+form.ui.form {
+  font-family: 'Oxygen', sans-serif !important;
+  padding: 10px, 5px 10px, 5px  !important;
+}
+
+/* LOGIN PAGE/SIGNUP PAGE */
+.login-div {
+    padding: 19px;
+    display: flex;
+    flex-direction: column;
+    height: 450px;
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    text-align: left;
+}
+
+.login-info, .header-info {
+  margin-top: 10px;
+  font-family: 'Oxygen', sans-serif !important;
+}
+
+.login-details {
+  width: 250px;
+  height: 30px;
+  background: transparent;
+  border: 0;
+  color: black;
+  border-radius: 5px;
+  font-family: 'Oxygen', sans-serif;
+  border-bottom: 2px dotted black
+}
+
+.login-details:focus { 
+  outline: none;
+  background: transparent;}
+
+.styled-button {
+  position: relative;
+  margin-top: 5px;
+  /* display: inline-block; */
+  white-space: nowrap;
+  background: transparent;
+  border-radius: 5px;
+  border: 02px solid #121212;
+  border-width: 01px 01px 01px 01px;
+  padding: 5px 10px 5px 10px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.styled-button:focus { 
+  outline-color: black !important;
+}
+
+.link-styling {
+  font-family: 'Oxygen', sans-serif; 
+    font-style: none;
+    color: black ;
+}
+
+.link-styling:hover { font-style: italic;
+  color: black }
+
+  /* END LOGIN PAGE */
+
+  /* TRIP CONTAINER STUFF */
+  .wrapper-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center ;
+  }
+  .trip-card-div {
+    display: flex;
+    flex-direction: column;
+    height: 450px;
+    width: 350px;
+    margin: 10px;
+    padding: 15px;
+    justify-content: center;
+  }
+
+  .trip-card-img {
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
+    border-radius: 70%;
+    transition: all 0.5s ease-in-out 0s;
+  }
+
+  .trip-card-img:hover {
+    transform: scale(1.05);
+    border-radius: 20%;
+    width: 215px;
+    height: 215px;
+  }
+
+  /*  END TRIP CONTAINER STUFF */
+
+  /* EDIT FORM/NEW TRIP FORM */
+.edit-info {
+  margin-left: 10px ;
+  font-family: 'Oxygen', sans-serif !important;
+  letter-spacing: 0.1em;
+  text-align: center  !important;
+
+}
+
+.edit-form-div {
+    /* display: flex;
+    flex-direction: column; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    text-align: left;
+    padding: 10px 20px 5px 5px  !important;
+}
+
+
+
+.hr-line {
+  border-top: 2px solid rgb(171,188,110);
+  /* border-top: 1px dashed black; */
+  margin-right: 80px;
+  margin-left: 80px;
+ }
+
+  .hr-line-two {
+    border-top: 3px solid rgb(188,166,110);
+  /* border-top: 1px dashed black; */
+  margin-right: 80px;
+  margin-left: 80px;
+  }
+
+  .btn-danger {
+    /* float: left; */
+    /* position: relative; */
+    /* display: block; */
+    white-space: nowrap;
+    background: transparent;
+    border-radius: 5px;
+    border: 02px solid #121212;
+    border-width: 01px 01px 01px 01px;
+    padding: 5px 10px 5px 10px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 6px;
+    transition: all 0.5s ease-in-out 0s;
+  }
+
+  .btn-danger:hover {
+    transform: scale(1.05);
+    background: rgb(223, 136, 136);
+
+  }
+
+  .submit-button {
+    margin-top: 5px;
+    white-space: nowrap;
+    background: transparent;
+    border-radius: 5px;
+    border: 02px solid #121212;
+    border-width: 01px 01px 01px 01px;
+    padding: 5px 10px 5px 10px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-left: 6px;
+  }
+
+  .new-trip-button {
+    float: right;
+    position: relative;
+    margin-top: 5px;
+  /* display: inline-block; */
+    white-space: nowrap;
+    background: transparent;
+    border-radius: 5px;
+    border: 02px solid #121212;
+    border-width: 01px 01px 01px 01px;
+    padding: 5px 10px 5px 10px;
+    font-size: 1em;
+    cursor: pointer;
+  }
+
+  .new-trip-button:hover {
+    font-style: italic;
+  }
+
+  .form-input {  
+    width: 30%;
+    background-color:  rgb(236,230,214);
+    border: 0;
+    color: black;
+    border-radius: 0px;
+    font-family: 'Oxygen', sans-serif;
+    border-bottom: 2px dotted black;
+    margin-top: 10px;
+    margin-bottom: 10px
+  }
+
+  .form-input:focus { 
+    outline: none;
+    background: transparent;
+    /* border-bottom: 3px dotted black; */
+  }
+
+    .form-input-long {  
+      width: 70%;
+      background-color:  rgb(236,230,214);
+      border: 0;
+      color: black;
+      border-radius: 0px;
+      font-family: 'Oxygen', sans-serif;
+      border-bottom: 2px dotted black;
+      margin-top: 10px;
+      margin-bottom: 10px
+    }
+
+    .form-input-long:focus { 
+      outline: none;
+      background: transparent;
+      /* border-bottom: 3px dotted black; */
+      }
+
+    .form-input-img {
+      margin-top: 10px
+    }
+ /* END EDIT FORM/NEW TRIP FORM */
+
+ /* DASHBOARD */
+
+  .dashboard-div {
+    margin-top: 20px;
+    /* font-family: ''Cantarell', serif; */
+    /* font-family: 'Oxygen', sans-serif  !important; */
+  }
+
+  .welcome-title {
+    font-size: 60px;
+    letter-spacing: 0.07em;
+    font-family: 'Oxygen', sans-serif;
+  }
+
+
+  /* END DASHBOARD */
+
+
+
+
+  /* PROFILE PAGE */
+
+  .profile-div {
+    width: 60%;
+    height: 30vh;
+    padding: 40px;
+    margin: auto;
+    border-top: 2px dotted black;
+    vertical-align: auto;
+  }
+
+  .junior-badge-img {
+    max-height: 18vh;
+    max-width: 20vw;
+    background: transparent;
+    border-radius: 70%;
+    margin-top: 7px;
+    /* box-shadow: 0 0 4px 0 rgb(171,188,110), 0 0 0 0 rgb(171,188,110); */
+  }
+
+  .park-badge-img {
+    max-height: 22vh;
+    max-width: 21vw;
+    background: transparent;
+    border-radius: 70%;
+    /* box-shadow: 0 0 4px 0 rgb(171,188,110), 0 0 0 0 rgb(171,188,110); */
+  }
+
+  .ranger-badge-img {
+    max-height: 21vh;
+    max-width: 25vw;
+    background: transparent;
+    border-radius: 70%;
+  }
+
+  .img-badge-div {
+    margin: 0 10px 0 10px;
+    max-width: 26vw;
+    max-height: 40vh;
+    box-shadow: 0 0 4px 0 rgb(171,188,110), 0 0 0 0 rgb(171,188,110);
+  }
+
+  .badges-div {
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+    height: 35vh;
+    margin: auto;
+  }
+
+  .no-badges-div {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+    height: 40vh;
+    /* margin: auto; */
+    justify-content: center;
+    color: green;
+    font-family: 'Cantarell', serif; 
+  }
+
+  .badges-info {
+    font-size: 40px;
+    color: green;
+    font-family: 'Cantarell', serif; 
+    
+  }
+
+  /* END PROFILE PAGE */
+
+
+
+
+
+
+  /* TRIP PAGE */
+
+  .trip-page-div {
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    margin: auto;
+    width: 100%;
+    /* border: 3px solid green; */
+    padding: 10px;
+    text-align: center;
+    font-family: 'Oxygen', sans-serif;
+  }
+
+  .trip-img-div {
+    display: flex;
+    margin-right: 15px;
+   
+  }
+
+  .trip-info-div {
+    margin-top: 10%;
+    margin-bottom: 20px;
+    margin-left: 5px;
+    padding: 10px;
+    text-align: left;
+  }
+
+  .trip-title {
+    font-size: 30px;
+    letter-spacing: 0.07em;
+    font-family: 'Oxygen', sans-serif;
+  }
+
+  .trip-img {
+    object-fit: cover;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 20px;
+    /* position: relative; */
+    display: block;
+    width: 50%;
+    max-height: 60vh;
+    border-radius: 10px;
+    /* border: 1px solid black; */
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 0px 0px 0 rgba(0, 0, 0, 0.19) */
+  }
+
+  .likes-styled-button {
+    position: relative;
+    margin-top: 5px;
+    /* display: inline-block; */
+    white-space: nowrap;
+    background: transparent;
+    border-radius: 5px;
+    border: 02px solid #121212;
+    border-width: 01px 01px 01px 01px;
+    padding: 5px 10px 5px 10px;
+    font-size: 1em;
+    cursor: pointer;
+  }
+
+  .likes-styled-button:focus {
+    outline: none !important;
+  }
+
+
+  /* END TRIP PAGE */
+
+
+
+
+  /* RETAIL PAGE */
+
+  .retail-div {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Oxygen', sans-serif;
+  }
+
+  .parks-project-div {
+    text-align: center;
+    width: 60vw;
+  }
+
+  .project-img {
+    width: 30vw;
+    height: 60vh;
+    border: 1px solid black;
+  }
+
+/* END RETAIL PAGE */
+
+
+
+
+
+
+/* PARK CONTAINER/PARK ITEMS  */
+.search-bar {
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-left: 16px;
+  font-size: 17px;
+  display: block;
+  font-family: 'Oxygen', sans-serif;
+}
+
+.search-bar:focus {
+  outline: none;
+}
+
+.park-item-div {
+  font-family: 'Oxygen', sans-serif !important
+}
+
+.park-link-styling {
+  font-family: 'Oxygen', sans-serif; 
+  font-style: none;
+  color: rgb(18, 92, 31) ;
+}
+
+.park-link-styling:hover { font-style: italic;
+  color: rgb(18, 92, 31) }
+
+.park-location {
+  font-family: 'Oxygen', sans-serif; 
+  margin-top: 3px;
+  opacity: 0.9;
+  color:rgb(188,166,110)
+}
+
+.park-info {
+  font-family: 'Oxygen', sans-serif !important; 
+}
+
+.map-div {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: 2%;
+  position: relative !important;
+  width: 150vw  !important;
+  height: 40vh;
+  
+}
+
+.park-trips-img {
+  max-width: 100%;
+  max-height: 70%;
+  margin-bottom: 10px;
+  border-radius: 10%;
+  /* border: 1px solid rgb(188,166,110); */
+}
+
+.park-trips-img:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 20px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
