@@ -23,7 +23,7 @@ function ParkPage() {
         return (<><Link key={trip.id} exact='true' to={`../trips/${trip.id}`}><img className="park-trips-img" alt="users trips to this park"key={trip.id} src={trip.img_url} size='medium'/><br></br></Link></> )
     })
     const currentUser = useSelector(({users}) => users.currentUser)
-    console.log(currentUser.trips)
+    // console.log(currentUser.trips)
     const currentUserPark = currentUser.trips.find(trip => {
         return (trip.park_id === park.id)
     })
@@ -33,7 +33,6 @@ function ParkPage() {
 
     useEffect(() => {
         const token = localStorage.getItem("token")
-        console.log(token)
         fetch(`${apiURL}dashboard`, {
             method: 'GET',
             headers: {

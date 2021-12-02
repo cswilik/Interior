@@ -20,7 +20,6 @@ import Signup from './Signup'
 
 function App() {
   const apiURL = 'https://interiornps.herokuapp.com/'
-  // TESTING
   const dispatch = useDispatch()
   
 
@@ -29,7 +28,6 @@ function App() {
       .then(resp => resp.json())
       .then(data => {
         dispatch(addUsers(data))
-        console.log(data)
       })
   }, [dispatch])
 
