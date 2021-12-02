@@ -1,6 +1,5 @@
 {
-  "homepage": "http://cswilik.github.io/interior-frontend",
-  "name": "interior-frontend",
+  "name": "interior",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
